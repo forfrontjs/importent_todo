@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
+}
+
+.todo{
+    margin: 4rem auto;
+    padding: 2rem 3rem 3rem;
+    max-width: 1000px;
+    background: #ff6666;
+    color: #fff;
+    box-shadow: -20px -20px 0px 0px rgba(100, 100, 100, 0.1);
+}
+
+.todo h1{
+    font-weight: normal;
+    font-size: 2.6rem;
+    letter-spacing: 0.05em;
+}
+
+.todo p {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+    margin-left: 3px;
+    margin-top: 0.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+.tasks li{
+    display: flex;
+    margin: 0 -3rem 4px;
+    padding: 1.1rem 3rem;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    min-width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+input {
+    height: 3rem;
+    font-size: 18px;
+}
+
+button {
+    font-family: "Quicksand", sans-serif;
+    height: 3rem;
+    padding: 0 1.3rem;
+    border: none;
+    background: #ff6666;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.progress{
+    width: 100%;
+    height: 50px;
+    border: 2px solid rgba(138, 130, 130, 0.385);
+    border-radius: 20px;
+    margin-top: 40px;
+    background-color: #fff;
+    position: relative;  
+}
+
+.progress h2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 9;
+    padding-top: 5px;
+    color: rgba(0, 42, 255, 0.599);
+    z-index: 1;
+    position: relative;
+    
+}
+
+.progress__done{
+    height: 100%;
+    background-color: green;
+    /* border-radius: 18px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 1.6rem;
+
+}
+
+.menu li:hover{
+    cursor: pointer;
+}
+
+.active {
+    color: rgba(0, 42, 255, 0.599);
+}
+
+.important {
+    color: rgba(0, 42, 255, 0.599);
+}
